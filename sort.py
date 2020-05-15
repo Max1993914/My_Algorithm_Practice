@@ -13,7 +13,7 @@ class Sort(object):
 class Bubble_Sort(Sort):
 
     @classmethod
-    @helpers.sort_cost_time
+    @helpers.function_cost_time
     def sort(cls, lis):
         has_exchange = True
         length = len(lis)
@@ -29,7 +29,7 @@ class Bubble_Sort(Sort):
 class Insert_Sort(Sort):
 
     @classmethod
-    @helpers.sort_cost_time
+    @helpers.function_cost_time
     def sort(cls, lis):
         for i, element in enumerate(lis):
             if i == 0: continue
@@ -43,7 +43,7 @@ class Insert_Sort(Sort):
 class Select_Sort(Sort):
 
     @classmethod
-    @helpers.sort_cost_time
+    @helpers.function_cost_time
     def sort(cls, lis):
         if not lis: return lis
 
@@ -63,7 +63,7 @@ class Select_Sort(Sort):
 class Quick_Sort(Sort):
 
     @classmethod
-    @helpers.sort_cost_time
+    @helpers.function_cost_time
     def sort(cls, lis):
 
         def recur(start_pos, end_pos):
